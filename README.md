@@ -4,6 +4,10 @@ Tätä päättötyötä varten halusin tehdä arkkitehtuurin Minecraft-serverill
 käyttöön, ja jota voisin jatkokehittää tulevaisuudessa. Arkkitehtuurin laitoin pystyyn
 Cloudformation templaattia käyttäen.
 
+### Arkkitehtuuriaavio:
+
+![arkkitehtuurikaavio1.1.drawio.png](https://github.com/Akunen/ICT-Infrastructure-AWS/blob/main/arkkitehtuurikaavio1.1.drawio.png)
+
 Templaatti koostuu seuraavista komponenteista:
 
 VPC (Virtual Private Cloud): Virtuaalinen verkkoympäristö, jolla voidaan eristää 
@@ -29,7 +33,7 @@ tapauksessa SSH-liikenne sallitaan vain tietystä IP-osoitteesta ja Minecraft-li
 
 LoadBalancerSecurityGroup: Palomuurisäännöt Load Balancerin käyttämälle portille 25565. 
 Tämä mahdollistaa Minecraft-liikenteen kulun Load Balancerin kautta.
-2
+
 
 NetworkLoadBalancer: kuormanjakaja, joka vastaanottaa serverillä pelaavien yhteydet ja 
 jakaa ne tasaisesti instansseille saatavuusalueiden välillä. Tämä parantaa suorituskykyä ja 
